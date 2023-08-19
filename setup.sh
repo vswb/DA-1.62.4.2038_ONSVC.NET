@@ -784,12 +784,11 @@ fi
 if [ $CMD_LINE -eq 0 ]; then
 
 	echo -n "Your external IP: ";
-	# wget -q -O - http://myip.directadmin.com
  	wget -q -O - ipecho.net/plain
 	echo "";
 	echo "The external IP should typically match your license IP.";
 	echo "";
-
+ 
 	if [ "$IP" = "" ]; then
 		yesno="n";
 	else
